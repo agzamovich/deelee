@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>&bull; &diams; D.M &diams; &bull;</title>
+        <link rel="icon" type="image/png" href="img/link.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link href="css/pace.css" rel="stylesheet" />
+        <script src="js/pace.js"></script>
+
+    </head>
+    <body>
+    	<div id="grand_parent">
+	    	<section>
+		    	<div id="parent">
+		    		<div id="card" class="child">
+		    			
+		    			<div id="first" class="front" data-stellar-background-ratio="0.3">
+							<h2 class="out overout">&mdash; Coding &mdash;</h2>
+						</div>
+						<div class="back back_one" id="jumpto">
+							<a href="code.html"><h2 class="out overout">&mdash; Coding &mdash;</h2></a>
+						</div>
+
+		    		</div>
+
+		    		<div id="card2" class="child">
+
+		    			<div id="second" class="front" data-stellar-background-ratio="0.3">
+		    				<h2>&mdash; Find Me &mdash;</h2>
+		    			</div>
+		    			<div class="back back_two">
+							<a href="find.html"><h2>&mdash; Find Me &mdash;</h2></a>
+						</div>
+
+		    		</div>
+
+		    		<div id="card3" class="child">
+
+		    			<div id="third" class="front" data-stellar-background-ratio="0.3">
+		    				<h2 id="flip" class="flip">&mdash; My Library &mdash;</h2>
+		    			</div>
+		    			<div class="back back_three">
+							<a href="library.html"><h2 id="flip" class="flip">&mdash; My Library &mdash;</h2></a>
+						</div>
+
+		    		</div>
+
+		    		<div id="card4" class="child">
+
+		    			<div id="fourth" class="front" data-stellar-background-ratio="0.3">
+		    				<h2>&mdash; Who am I? &mdash;</h2>
+		    			</div>
+		    			<div class="back back_four">
+							<a href="aboutme.html"><h2>&mdash; Who am I? &mdash;</h2></a>
+						</div>
+		    		</div>
+
+		    	</div>
+
+		    </section>
+		</div>  <!--main-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js.map"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+  		<script type="text/javascript">
+			$(document).ready(function() {
+			
+			function navLinkClicked(event) {
+
+				event.preventDefault();
+
+				var href = $(this).attr("href");
+
+				$(window).scrollTo(href, 3000, {offset: -100});
+			}
+			$("nav ul a").click(navLinkClicked);
+			// $.stellar();
+		});
+	$("#card").flip();
+	$("#card2").flip();
+	$("#card3").flip();
+	$("#card4").flip();
+
+
+		$('h2').hover(
+	    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.data('initialText', $this.text());
+		        $this.text("Read More...");
+		    },
+		    function() {
+		        var $this = $(this); // caching $(this)
+		        $this.text($this.data('initialText'));
+		    }
+		);
+		</script>
+    </body>
+</html>

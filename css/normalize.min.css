@@ -1,0 +1,103 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{
+	font-family: sans-serif;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: lightyellow;
+}
+video{
+	position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    opacity: 0.6;
+}
+.hobby li{
+	height: auto;
+	padding: 20px;
+	margin-left: 4%;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #5A0080;
+	display: inline;
+	width: 130px;
+	letter-spacing: 5px;
+	float: left;
+	list-style: none;
+	font-weight: bolder;
+	margin-top: 20%;
+}
+.hobby li:hover{
+	background-color: #FF0084;
+	cursor: pointer;
+}
+ul{
+	
+	margin-left: 33%;
+	width: 100%;
+}
+ul a{
+	background-color: transparent;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+span a{
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	float: right;
+	margin-top: 30px;
+	margin-right: 40px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-style: inherit;
+}
+span a:hover{
+	color: #FFF;
+	border-color: #FFF;
+}
+@media all and (max-width: 1024px){
+	ul{
+		margin-left: 22%;
+	}
+}
+@media all and (max-width: 480px){
+	ul{
+		margin-left: 10%;
+	}
+	.hobby li{
+		height: auto;
+		padding: 10px;
+		margin: 5%;
+		border-radius: 10px;
+		text-align: center;
+		background-color: #5A0080;
+		display: inline;
+		width: 100px;
+		letter-spacing: 1px;
+		float: left;
+		list-style: none;
+		font-weight: bold;
+		margin-top: 50%;
+	}
+	span a{
+		color: #FFF;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		margin-top: 0;
+	}
+}
